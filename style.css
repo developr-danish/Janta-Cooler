@@ -85,6 +85,48 @@ header ul li a:hover{
     border-radius: 50%;
     background-color: gray;
 }
+#carousel img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+#carousel .anime-data{
+    color: black;
+}
+#carousel button{
+    animation: downtoup 1.5s;
+}
+.anime-data h1{
+    font-size: 50px;
+    animation: uptodown 1.5s ;
+}
+.anime-data p{
+    font-size: 30px;
+    animation: righttoleft 1.5s;
+}
+@keyframes uptodown{
+    from{
+        transform: translateY(-1000px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+@keyframes righttoleft{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes downtoup{
+    from{
+        transform: translateY(1000px);
+    }to{
+        transform: translateY(0px);
+    }
+}
 /* carousel part end from here */
 
 /* welcome-msg start from here */
@@ -98,13 +140,38 @@ header ul li a:hover{
 /* product part start from here */
 .card{
     margin-bottom: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .card-text{
     margin: 0 !important;
 }
 /* product part end from here */
 
+/* contact form start from here */
 
+#contact-form input{
+    margin-bottom: 20px;
+}
+#contact-form select{
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #FFF;
+    margin-bottom: 20px;
+}
+#contact-form textarea{
+    height: 120px;
+    resize: none;
+}
+#btn{
+    border: none;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #B71710;
+    color: #fff;
+}
+/* contact form end from here */
 
 
 

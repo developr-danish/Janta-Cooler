@@ -62,6 +62,7 @@
       border-radius: 5px;
       outline: none;
       border: none;
+      background-color: #fff;
     }
     .aside-part2 textarea {
       height: 110px;
@@ -73,6 +74,32 @@
       border: none;
       outline: none;
       border-radius: 5px;
+    }
+    #breadcrumb{
+      width: 100%;
+      height: 120px;
+      background: url(Assets/Products/Almirah/hindal-gold.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .color{
+      background-color: rgba(0, 0, 0, 0.655);
+      padding: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+    #breadcrumb .breadcrumb{
+      display: flex ;
+      justify-content: end;
+    }
+    #breadcrumb .breadcrumb a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .breadcrumb-item+.breadcrumb-item::before{
+      color: #fff;
     }
 </style>
 <body>
@@ -136,7 +163,25 @@
         </nav>
       </header>
 
-      <section class="container" id="hero">
+      <section class="container-fluid p-0" id="breadcrumb">
+        <div class="color">
+        <div class="container">
+            <div class="row mx-md-5">
+              <div class="col-6">
+                <h2 class="text-white">Almirah</h2>
+              </div>
+              <div class="col-6">
+                <nav class="breadcrumb">
+                  <a class="breadcrumb-item" href="index.html">Home</a>
+                  <p class="breadcrumb-item active">Almirah</p>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5" id="hero">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                 <aside class="aside-part">
@@ -145,7 +190,7 @@
                     <a href="">Boxes</a>
                   </aside>
                   <div class="mt-4">
-                    <aside class="aside-part2">
+                    <aside class="aside-part2 mb-5">
                       <a href="">Quick Enquiry</a>
                       <form action="" class="px-3">
                         <input type="text" placeholder="Name" class="form-control" />
@@ -171,7 +216,6 @@
                     </div>
                 </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-9">
-                <h2 class="text-center">Our <span>Products</span></h2>
                 <div class="row mx-md-5">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
@@ -203,7 +247,7 @@
                         <div class="card">
                             <img class="card-img-top" src="Assets/Products/Almirah/hindal-double-door.jpg" alt="Title">
                             <div class="card-body">
-                                <h4 class="card-title text-center">Hindal Double Door</h4>
+                                <h4 class="card-title text-center">Double Door</h4>
                                 <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
                                 <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
                                 <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
@@ -216,7 +260,7 @@
                         <div class="card">
                             <img class="card-img-top" src="Assets/Products/Almirah/hindal-gold.jpg" alt="Title">
                             <div class="card-body">
-                                <h4 class="card-title text-center">Hindal gold</h4>
+                                <h4 class="card-title text-center">Gold</h4>
                                 <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
                                 <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
                                 <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
@@ -225,6 +269,110 @@
                             <a href=""><button class="btn btn-danger mb-2 ms-2">Know More</button></a>
                         </div>
                     </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                      <div class="card">
+                      <img class="card-img-top" src="Assets/Products/Almirah/hindal-gold2.jpg" alt="Title">
+                          <div class="card-body">
+                              <h4 class="card-title text-center">Gold 2</h4>
+                              <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                              <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                              <p class="card-text"><i class="fa fa-star and crescent"></i>Hanger Pipe</p>
+                              <p class="card-text"><i class="fa fa-star and crescent"></i>S.S. Number Lock</p>
+                          </div>
+                          <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                    <img class="card-img-top" src="Assets/Products/Almirah/hindal-mirror.jpg" alt="Title">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Mirror</h4>
+                            <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                            <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                            <p class="card-text"><i class="fa fa-star and crescent"></i>Letter Pocket</p>
+                            <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+                        </div>
+                        <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                  <img class="card-img-top" src="Assets/Products/Almirah/Hindal-123.jpg" alt="Title">
+                      <div class="card-body">
+                          <h4 class="card-title text-center">Hindal 1,2,3,4</h4>
+                          <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                          <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                          <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
+                          <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+                      </div>
+                      <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                <img class="card-img-top" src="Assets/Products/Almirah/Hindal-imperial.jpg" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Imperial</h4>
+                        <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                        <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                        <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
+                        <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+                    </div>
+                    <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="card">
+              <img class="card-img-top" src="Assets/Products/Almirah/hindal-Plus-Super-Prime.jpg" alt="Title">
+                  <div class="card-body">
+                      <h4 class="card-title text-center">Plus-Super-Prime</h4>
+                      <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                      <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                      <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
+                      <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+                  </div>
+                  <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
+              </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+            <img class="card-img-top" src="Assets/Products/Almirah/hindal-royal.jpg" alt="Title">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Royal</h4>
+                    <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                    <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                    <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
+                    <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+                </div>
+                <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+          <img class="card-img-top" src="Assets/Products/Almirah/office.jpg" alt="Title">
+              <div class="card-body">
+                  <h4 class="card-title text-center">Office</h4>
+                  <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                  <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                  <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
+                  <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+              </div>
+              <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
+          </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+        <img class="card-img-top" src="Assets/Products/Almirah/supreme-mirror.jpg" alt="Title">
+            <div class="card-body">
+                <h4 class="card-title text-center">Supreme-Mirror</h4>
+                <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
+                <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+            </div>
+            <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
+        </div>
+    </div>
                 </div>
             </div>
         </div>
