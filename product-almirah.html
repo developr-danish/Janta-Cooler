@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janta Cooler</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<style>
+    .aside-part {
+      background-color: #f1f1f1;
+    }
+    .aside-part a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
+    }
+    .aside-part a:nth-child(2) {
+      background-color: #18496B;
+      color: #fff;
+    }
+    .aside-part a:hover {
+      background-color: #18496B;
+      color: white;
+    }
+    .aside-part2 {
+      background-color: #f1f1f1;
+    }
+    .aside-part2 a {
+      padding: 15px 10px;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.155);
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
+      background-color: #18496B;
+      color: #fff;
+    }
+    .aside-part2 input,
+    textarea,
+    button {
+      margin: 10px 0px;
+      padding: 10px 10px;
+    }
+
+    .aside-part2 select {
+      width: 100%;
+      height: 38px;
+      padding: 8px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+    }
+    .aside-part2 textarea {
+      height: 110px;
+      resize: none;
+    }
+    .aside-part2 button {
+      background-color: #006db7;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+</style>
+<body>
+    <section class="container-fluid" id="top-bar">
+        <div class="container">
+          <div class="row mx-md-5">
+            <div class="contact-details">
+              <i class="fa fa-phone"></i>
+              <p>+917309775010</p>
+              <i class="fa fa-envelope"></i>
+              <p>Jamaal045@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <header id="navbar">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"
+              ><img src="Assets/Logo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavId"
+              aria-controls="collapsibleNavId"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end text-center"
+              id="collapsibleNavId"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html" aria-current="page"
+                    >Home <span class="visually-hidden">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="#">Cooler</a>
+                      <a class="dropdown-item" href="product-almirah.html">Almirah</a>
+                      <a class="dropdown-item" href="">Boxes</a>
+                  </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact-us.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="container" id="hero">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <aside class="aside-part">
+                    <a href="">Cooler</a>
+                    <a href="">Almirah</a>
+                    <a href="">Boxes</a>
+                  </aside>
+                  <div class="mt-4">
+                    <aside class="aside-part2">
+                      <a href="">Quick Enquiry</a>
+                      <form action="" class="px-3">
+                        <input type="text" placeholder="Name" class="form-control" />
+                      <input type="email" placeholder="Email" class="form-control" />
+                      <input type="tel" placeholder="phone No." class="form-control" />
+                      <select name="" id="">
+                        <option value="">select </option>
+                        <option value="">Cooler</option>
+                        <option value="">Almirah</option>
+                        <option value="">Boxes</option>
+                      </select>
+                      <textarea
+                        class="form-control"
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                      ></textarea>
+                      <button type="submit">Send Message</button>
+                      </form>
+                    </aside>
+                    </div>
+                </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                <h2 class="text-center">Our <span>Products</span></h2>
+                <div class="row mx-md-5">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                        <img class="card-img-top" src="Assets/Products/Almirah/mirror-plus.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Mirror Plus</h4>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Hanger Pipe</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+                            </div>
+                            <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/Products/Almirah/hindal-deluxe.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Deluxe</h4>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Hanger Pipe</p>
+                            </div>
+                            <a href=""><button class="btn btn-danger mb-2 ms-2">Know More</button></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/Products/Almirah/hindal-double-door.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Hindal Double Door</h4>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+                            </div>
+                            <a href=""><button class="btn btn-danger mb-2 ms-2">Know More</button></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="Assets/Products/Almirah/hindal-gold.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Hindal gold</h4>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
+                                <p class="card-text"><i class="fa fa-star and crescent"></i>Hanger Pipe</p>
+                            </div>
+                            <a href=""><button class="btn btn-danger mb-2 ms-2">Know More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+      <footer class="container-fluid py-5" id="footer">
+        <div class="container">
+          <div class="row mx-md-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+              <h3>Janta Cooler</h3>
+              <p>
+                Welcome to "Janta Cooler," your go-to destination for all your
+                cooling needs! Step into a world of comfort and innovation at our
+                cooler shop. We pride ourselves on providing the community with
+                affordable and efficient cooling solutions to beat the heat. At
+                Janta Cooler, we understand the importance of staying cool in
+                every season, and our showroom reflects just that.
+              </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+              <h3>Quick Links</h3>
+              <a href="#">All Products</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Refund Policy</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+              <h3>Reach Us</h3>
+              <div class="address">
+                <i class="bi bi-house"></i>
+                <p>
+                  131 C-1 <br />Sujat ganj <br />Kanpur <br />208013 <br />Uttar
+                  Pradesh
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+              <h3>Contact Us</h3>
+              <div class="contact-details">
+                <i class="fa fa-phone"></i>
+                <p>+917309775010</p>
+              </div>
+              <div class="contact-details">
+                <i class="fa fa-phone"></i>
+                <p>+916386360544</p>
+              </div>
+              <div class="contact-details">
+                <i class="fa fa-envelope"></i>
+                <p>Jamaal045@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "josefin sans";
+}
+span{
+    color: #B71710 ;
+}
+ 
+/* top-bar part start form here */
+#top-bar{
+    width: 100%;
+    height: 100%;
+    background-color: #18496B;
+}
+.contact-details{
+    display: flex;
+}
+.contact-details p{
+    padding:5px 20px 5px 0px;
+    margin: 0;
+    color: #FFF;
+}
+.contact-details i{
+    padding: 8px 5px 0px 0px;
+    color: white;
+}
+/* top-bar part end form here */
+
+/* whatsapp part start from here */
+#social{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    position: fixed;
+    left: 10px;
+}
+#social i{
+    font-size: 30px;
+    color: #FFF;
+}
+/* whatsapp part end from here */
+
+
+
+/* navbar part start from here */
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    background-color: #FFF;
+}
+header nav img{
+    width: 100px;
+    height: 80px;
+}
+header ul li a{
+    padding: 10px 25px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: black !important;
+    transition: 0.7s !important;
+}
+header ul li a:hover{
+    color: #FFC600 !important
+}
+.active{
+    color: #FFC600 !important;
+}
+/* navbar part end from here */
+
+/* carousel part start from here */
+.carousel-indicators [data-bs-target]{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: gray;
+}
+/* carousel part end from here */
+
+/* welcome-msg start from here */
+#welcome-msg P{
+    text-align: center;
+    line-height: 30px;
+}
+/* welcome-msg end from here */
+
+
+/* product part start from here */
+.card{
+    margin-bottom: 20px;
+}
+.card-text{
+    margin: 0 !important;
+}
+/* product part end from here */
+
+
+
+
+
+
+
+
+
+
+/* footer part start from here */
+#footer{
+    background-color: black;
+    color: #FFF;
+}
+#footer p{
+    text-align: justify;
+}
+#footer a{
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 40px;
+}
+#footer h3{
+    margin:10px 0px;
+}
+.address{
+    display: flex;
+    gap: 20px;
+}
+/* footer part end from here */
