@@ -52,23 +52,33 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html" aria-current="page"
+                <a class="nav-link" href="index.html" aria-current="page"
                   >Home <span class="visually-hidden">(current)</span></a
                 >
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link " href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Our Products</a
+                >
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="#">Cooler</a>
-                    <a class="dropdown-item" href="product-almirah.html">Almirah</a>
-                    <a class="dropdown-item" href="">Boxes</a>
+                  <a class="dropdown-item" href="product-cooler.html">Cooler</a>
+                  <a class="dropdown-item" href="product-almirah.html"
+                    >Almirah</a
+                  >
+                  <a class="dropdown-item" href="">Boxes</a>
                 </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
               </li>
             </ul>
           </div>
@@ -77,7 +87,11 @@
     </header>
 
     <section id="carousel">
-      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselId"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators">
           <li
             data-bs-target="#carouselId"
@@ -99,30 +113,51 @@
         </div>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-              <div class="container">
-                <div class="row">
-                    <div class="col-6 col-sm-6 col-md-12 col-lg-6 d-flex align-items-center justify-content-center">
-                        <div class="anime-data">
-                            <div class="content-data">
-                                <h1>Almirah Seller</h1>
-                            <p>Meri almirah Bahu Aur Beti Ka Ghar Sajaye</p>
-                            <a href=""><button class="btn btn-danger">Know More</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-12 col-lg-6">
-                        <img src="Assets/slide-4.png" alt="">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-6 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center"
+                >
+                  <div class="anime-data">
+                    <div class="content-data">
+                      <h1>We Sell Almirah</h1>
+                      <p>Meri Almirah Bahu Aur Beti Ka Ghar Sajaye</p>
+                      <a href="product-almirah.html"
+                        ><button class="btn btn-danger">Know More</button></a
+                      >
                     </div>
                   </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                  <img src="Assets/slide-4.png" alt="" />
+                </div>
               </div>
-           
+            </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="Assets/Slide-2.jpg"
-              class="w-100 d-block"
-              alt="Second slide"
-            />
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-6 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-center"
+                >
+                  <div class="anime-data">
+                    <div class="content-data">
+                      <h1>We Sell Cooler</h1>
+                      <p>
+                        Hamse Acha Aur Thanda Koi nahi, Garmi me bhi Sardi Ka
+                        Ahsas
+                      </p>
+                      <a href="product-cooler.html"
+                        ><button class="btn btn-danger">Know More</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                  <img src="Assets/slide-5.jpg" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
             <img
@@ -136,10 +171,13 @@
     </section>
 
     <section id="social">
-        <a href="https://wa.me/7309775010"><i class="fa fa-whatsapp"></i></a>
+      <a href="https://wa.me/7309775010"><i class="fa fa-whatsapp"></i></a>
+    </section>
+    <section id="home-arrow">
+      <a href="#top-bar"><i class="fa fa-angle-up"></i></a>
     </section>
 
-    <section id="welcome-msg">
+    <section class="container-fluid p-0 py-5" id="welcome-msg">
       <h2 class="text-center pt-4">Welcome To <span>Janta Cooler</span></h2>
       <div class="container">
         <div class="row mx-md-5">
@@ -155,97 +193,293 @@
           </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f00102"
+          fill-opacity="1"
+          d="M0,64L34.3,80C68.6,96,137,128,206,144C274.3,160,343,160,411,144C480,128,549,96,617,106.7C685.7,117,754,171,823,181.3C891.4,192,960,160,1029,144C1097.1,128,1166,128,1234,133.3C1302.9,139,1371,149,1406,154.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
     </section>
 
     <section class="container py-5" id="Product">
-        <h2 class="text-center">Our <span>Products</span></h2>
-        <div class="row mx-md-5">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                <div class="card">
-                <img class="card-img-top" src="Assets/Products/Almirah/mirror-plus.jpg" alt="Title">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Mirror Plus</h4>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Hanger Pipe</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
-                    </div>
-                    <a href=""><button class="btn btn-danger mb-2 ms-2 ">Know More</button></a>
-                </div>
+      <h2 class="text-center">Our <span>Products</span></h2>
+      <div class="row mx-md-5">
+        <p class="text-center">Almirah Samples</p>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Assets/Products/Almirah/mirror-plus.jpg"
+              alt="Title"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center">Mirror Plus</h4>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Locker
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Inside Locker
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Hanger Pipe
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Key Holder
+              </p>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <img class="card-img-top" src="Assets/Products/Almirah/hindal-deluxe.jpg" alt="Title">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Deluxe</h4>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Hanger Pipe</p>
-                    </div>
-                    <a href=""><button class="btn btn-danger mb-2 ms-2">Know More</button></a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <img class="card-img-top" src="Assets/Products/Almirah/hindal-double-door.jpg" alt="Title">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Hindal Double Door</h4>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Locker</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
-                    </div>
-                    <a href=""><button class="btn btn-danger mb-2 ms-2">Know More</button></a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <img class="card-img-top" src="Assets/Products/Almirah/hindal-gold.jpg" alt="Title">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Hindal gold</h4>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Key Holder</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Inside Locker</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Bangle Rod</p>
-                        <p class="card-text"><i class="fa fa-star and crescent"></i>Hanger Pipe</p>
-                    </div>
-                    <a href=""><button class="btn btn-danger mb-2 ms-2">Know More</button></a>
-                </div>
-            </div>
+            <a href=""
+              ><button class="btn btn-danger mb-2 ms-2">Know More</button></a
+            >
+          </div>
         </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Assets/Products/Almirah/hindal-deluxe.jpg"
+              alt="Title"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center">Deluxe</h4>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Locker
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Inside Locker
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Bangle Rod
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Hanger Pipe
+              </p>
+            </div>
+            <a href=""
+              ><button class="btn btn-danger mb-2 ms-2">Know More</button></a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Assets/Products/Almirah/hindal-double-door.jpg"
+              alt="Title"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center">Double Door</h4>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Locker
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Inside Locker
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Bangle Rod
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Key Holder
+              </p>
+            </div>
+            <a href=""
+              ><button class="btn btn-danger mb-2 ms-2">Know More</button></a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Assets/Products/Almirah/hindal-gold.jpg"
+              alt="Title"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center">Gold</h4>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Key Holder
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Inside Locker
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Bangle Rod
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Hanger Pipe
+              </p>
+            </div>
+            <a href=""
+              ><button class="btn btn-danger mb-2 ms-2">Know More</button></a
+            >
+          </div>
+        </div>
+        <p class="text-center">Cooler Samples</p>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Assets/Products/Cooler/Platina tower.png"
+              alt="Title"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center">Platina Tower</h4>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>100L Water Tank
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Designer front
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Durable Plastic Body
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Heavy Duty Motor
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>12 Month Warranty
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Assets/Products/Cooler/Tiara.png"
+              alt="Title"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center">Tiara</h4>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>100L Water Tank
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Designer front
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Durable Plastic Body
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Heavy Duty Motor
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>12 Month Warranty
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Assets/Products/Cooler/Optra.png"
+              alt="Title"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center">Optra</h4>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>100L Water Tank
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Designer front
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Durable Plastic Body
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Heavy Duty Motor
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>12 Month Warranty
+              </p>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Assets/Products/Cooler/nexia_tower.png"
+              alt="Title"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center">Nexia Tower</h4>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>100L Water Tank
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Designer front
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Durable Plastic Body
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>Heavy Duty Motor
+              </p>
+              <p class="card-text">
+                <i class="fa fa-star and crescent"></i>12 Month Warranty
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
     </section>
- 
+
     <section class="container py-5" id="contact-form">
-        <h2 class="text-center">Quick enquiry</h2>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-8 mx-auto">
-                <form action="">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
-                            <input type="text" placeholder="Enter Name" class="form-control">
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
-                            <input type="text" placeholder="Enter Email" class="form-control">
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
-                            <input type="tel" placeholder="Mobile Number" class="form-control">
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
-                            <select name="" id="" class="">
-                                <option value="">Select</option>
-                                <option value="">Almirah</option>
-                                <option value="">Cooler</option>
-                                <option value="">Boxes</option>
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <textarea name="" placeholder="Message" class="form-control" id="" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <input type="submit" id="btn" value="Send Message">
-                </form>
+      <h2 class="text-center">Quick <span>Enquiry</span></h2>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 mx-auto">
+          <form action="">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <input
+                  type="tel"
+                  placeholder="Mobile Number"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <select name="" id="" class="">
+                  <option value="">Select</option>
+                  <option value="">Almirah</option>
+                  <option value="">Cooler</option>
+                  <option value="">Boxes</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea
+                  name=""
+                  placeholder="Message"
+                  class="form-control"
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
             </div>
+            <input type="submit" id="btn" value="Send Message" />
+          </form>
         </div>
+      </div>
     </section>
 
     <footer class="container-fluid pt-5" id="footer">

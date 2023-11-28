@@ -28,12 +28,12 @@ span{
 }
 /* top-bar part end form here */
 
-/* whatsapp part start from here */
+/* whatsapp and homearrow part start from here */
 #social{
     width: 50px;
     height: 50px;
     border: 1px solid black;
-    background-color: green;
+    background-color: #DC3545;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,11 +44,26 @@ span{
     position: fixed;
     left: 10px;
 }
-#social i{
+#social i , #home-arrow i{
     font-size: 30px;
     color: #FFF;
 }
-/* whatsapp part end from here */
+#home-arrow {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #DC3545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    position: fixed;
+    z-index: 1;
+}
+/* whatsapp and homearrow part end from here */
 
 
 
@@ -71,10 +86,21 @@ header ul li a{
     transition: 0.7s !important;
 }
 header ul li a:hover{
-    color: #FFC600 !important
+    color: #DC3545 !important
 }
 .active{
     color: #FFC600 !important;
+}
+.dropdown-menu{
+    --bs-dropdown-bg:black;
+    padding: 0;
+    overflow: hidden;
+}
+.dropdown-menu a{
+    color: #FFF !important;
+}
+.dropdown:hover .dropdown-menu{
+    display: block !important;
 }
 /* navbar part end from here */
 
@@ -134,13 +160,21 @@ header ul li a:hover{
     text-align: center;
     line-height: 30px;
 }
+#welcome-msg{
+    position: relative;
+}
+#welcome-msg svg{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
 /* welcome-msg end from here */
 
 
 /* product part start from here */
 .card{
     margin-bottom: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .card-text{
     margin: 0 !important;
