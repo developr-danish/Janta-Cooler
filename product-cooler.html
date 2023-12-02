@@ -77,7 +77,7 @@
         #breadcrumb{
           width: 100%;
           height: 120px;
-          background: url(Assets/Products/Almirah/hindal-gold.jpg);
+          background: url(Assets/Products/Cooler/Vivo\ pro.png);
           background-position: center;
           background-repeat: no-repeat;
         }
@@ -96,6 +96,11 @@
         #breadcrumb .breadcrumb a{
           text-decoration: none;
           color: #fff;
+          font-size: 20px;
+        }
+        #breadcrumb p{
+          color: #F4CE14 !important;
+          font-size: 20px;
         }
         .breadcrumb-item+.breadcrumb-item::before{
           color: #fff;
@@ -105,6 +110,13 @@
           height: 300px;
           object-fit: contain;
         }
+        @media(max-width:767px){
+          .aside-part2{
+            display: none;
+            visibility: hidden;
+          }
+        }
+        
     </style>
 </head>
 <body>
@@ -116,7 +128,7 @@
               <i class="fa fa-phone"></i>
               <p>+917309775010</p>
               <i class="fa fa-envelope"></i>
-              <p>Jamaal045@gmail.com</p>
+              <p>mohdjamaal@jantacooler.in</p>
             </div>
           </div>
         </div>
@@ -145,7 +157,7 @@
             >
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html" aria-current="page"
+                  <a class="nav-link active" href="index.html" aria-current="page"
                     >Home <span class="visually-hidden">(current)</span></a
                   >
                 </li>
@@ -187,13 +199,17 @@
         </div>
       </section>
 
+      <section id="social">
+        <a href="https://wa.me/7309775010"><i class="fa fa-whatsapp"></i></a>
+      </section>
+
       <section class="container py-5" id="hero">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                 <aside class="aside-part">
                     <a href="product-cooler.html">Cooler</a>
                     <a href="product-almirah.html">Almirah</a>
-                    <a href="">Boxes</a>
+                    <a href="product-boxes.html">Boxes</a>
                   </aside>
                   <div class="mt-4">
                     <aside class="aside-part2 mb-5">
@@ -338,7 +354,7 @@
                         <div class="card">
                             <img
                               class="card-img-top"
-                              src="Assets/slide-5.jpg"
+                              src="Assets/Products/Cooler/Marshal.jpg"
                               alt="Title"
                             />
                             <div class="card-body">
@@ -564,7 +580,7 @@
 
 
 
-      <footer class="container-fluid py-5" id="footer">
+      <footer class="container-fluid pt-5" id="footer">
         <div class="container">
           <div class="row mx-md-5">
             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
@@ -580,9 +596,8 @@
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
               <h3>Quick Links</h3>
-              <a href="#">All Products</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Refund Policy</a>
+              <a href="Privacy-Policy.html">Privacy Policy</a>
+              <a href="Refund-policy.html">Refund Policy</a>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
               <h3>Reach Us</h3>
@@ -608,10 +623,34 @@
                 <i class="fa fa-envelope"></i>
                 <p>Jamaal045@gmail.com</p>
               </div>
+              <div class="owner py-2">
+                <h6>Owner : Mohd Saeed</h6>
+              </div>
+              <div class="socials">
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </footer>
+
+      <section class="container-fluid py-3" id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+              <h6>
+                &copy; Copyrights 2023 @ Janta Cooler Since 1992 to 2023, all type
+                of Cooler , Trunk Boxes and Almirah All Right Reserved
+              </h6>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+              <h5>Designed By <span>Developer Danish</span></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <script src="js/bootstrap.bundle.js"></script>
 
 
