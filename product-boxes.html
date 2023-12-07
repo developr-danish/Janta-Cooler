@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janta Cooler</title>
+    <title>Janta Cooler | Trunks</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Assets/web-icon.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
@@ -15,17 +16,116 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-        #coming-soon{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50vh;
+      .aside-part {
+        background-color: #f1f1f1;
+      }
+      .aside-part a {
+        padding: 15px 10px;
+        display: block;
+        border: 1px solid rgba(0, 0, 0, 0.155);
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+      }
+      .aside-part a:nth-child(3) {
+        background-color: #18496B;
+        color: #fff;
+      }
+      .aside-part a:hover {
+        background-color: #18496B;
+        color: white;
+      }
+      .aside-part2 {
+        background-color: #f1f1f1;
+      }
+      .aside-part2 a {
+        padding: 15px 10px;
+        display: block;
+        border: 1px solid rgba(0, 0, 0, 0.155);
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+        background-color: #18496B;
+        color: #fff;
+      }
+      .aside-part2 input,
+      textarea,
+      button {
+        margin: 10px 0px;
+        padding: 10px 10px;
+      }
+  
+      .aside-part2 select {
+        width: 100%;
+        height: 38px;
+        padding: 8px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background-color: #fff;
+      }
+      .aside-part2 textarea {
+        height: 110px;
+        resize: none;
+      }
+      .aside-part2 button {
+        background-color: #006db7;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+      }
+      #breadcrumb{
+        width: 100%;
+        height: 120px;
+        background: url(Assets/Products/Cooler/Vivo\ pro.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .color{
+        background-color: rgba(0, 0, 0, 0.655);
+        padding: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+      #breadcrumb .breadcrumb{
+        display: flex ;
+        justify-content: end;
+      }
+      #breadcrumb .breadcrumb a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+      }
+      #breadcrumb p{
+        color: #F4CE14 !important;
+        font-size: 20px;
+      }
+      .breadcrumb-item+.breadcrumb-item::before{
+        color: #fff;
+      }
+      #hero img{
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+      }
+      .coming{
+        display: flex;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 6em;
+      }
+      @media(max-width:767px){
+        .aside-part2{
+          display: none;
+          visibility: hidden;
         }
-        #coming-soon h1{
-            font-size: 100px;
-        }
-        
-    </style>
+      }
+      
+  </style>
 </head>
 <body>
     <section class="container-fluid" id="top-bar">
@@ -92,8 +192,62 @@
         <a href="https://wa.me/7309775010"><i class="fa fa-whatsapp"></i></a>
       </section>
 
-      <section id="coming-soon">
-        <h1>Coming Soon</h1>
+      <section class="container-fluid p-0" id="breadcrumb">
+        <div class="color">
+        <div class="container">
+            <div class="row mx-md-5">
+              <div class="col-6">
+                <h2 class="text-white">Trunk Boxes</h2>
+              </div>
+              <div class="col-6">
+                <nav class="breadcrumb">
+                  <a class="breadcrumb-item" href="index.html">Home</a>
+                  <p class="breadcrumb-item active">Trunk Boxes</p>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5" id="hero">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <aside class="aside-part">
+                    <a href="product-cooler.html">Cooler</a>
+                    <a href="product-almirah.html">Almirah</a>
+                    <a href="product-boxes.html">Trunk Boxes</a>
+                  </aside>
+                  <div class="mt-4">
+                    <aside class="aside-part2 mb-5">
+                      <a href="">Quick Enquiry</a>
+                      <form action="" class="px-3">
+                        <input type="text" placeholder="Name" class="form-control" />
+                      <input type="email" placeholder="Email" class="form-control" />
+                      <input type="tel" placeholder="phone No." class="form-control" />
+                      <select name="" id="">
+                        <option value="">select </option>
+                        <option value="">Cooler</option>
+                        <option value="">Almirah</option>
+                        <option value="">Boxes</option>
+                      </select>
+                      <textarea
+                        class="form-control"
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                      ></textarea>
+                      <button type="submit">Send Message</button>
+                      </form>
+                    </aside>
+                    </div>
+                </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                <h1 class="coming">Coming Soon</h1>
+            </div>
+        </div>
       </section>
 
       <footer class="container-fluid pt-5" id="footer">
@@ -137,7 +291,7 @@
               </div>
               <div class="contact-details">
                 <i class="fa fa-envelope"></i>
-                <p>Jamaal045@gmail.com</p>
+                <p>mohdjamaal@jantacooler.in</p>
               </div>
               <div class="owner py-2">
                 <h6>Owner : Mohd Saeed</h6>
