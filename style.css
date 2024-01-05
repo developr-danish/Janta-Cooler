@@ -111,6 +111,8 @@ header ul li a:hover{
     height: 400px;
     object-fit: contain;
     animation: scale 10s alternate infinite;
+    position: relative;
+    top: 50px;
 }
 #carousel .anime-data{
     color: black;
@@ -122,11 +124,16 @@ header ul li a:hover{
     border: 1px solid white !important;
     background-color: #ffffff2f;
 }
+.anime-data{
+    height: 500px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
 .anime-data h1{
     font-size: 70px;
     animation: uptodown 1.5s ;
-    position: relative;
-    z-index: 111;
+    
 }
 .anime-data p{
     font-size: 40px;
